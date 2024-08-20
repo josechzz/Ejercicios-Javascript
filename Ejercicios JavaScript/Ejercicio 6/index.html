@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Agencia de viajes</title>
+</head>
+
+<body>
+    <h1>Agencia de viajes ABC</h1>
+
+    <form id="formularioDescuento" onsubmit="calcularDescuento(event)">
+        
+        <label for="origen">Selecciona origen </label>
+        <select id="origen" name="origen">
+            <option value="Ciudad de Palma">Ciudad de Palma</option>
+        </select>
+
+
+        <label for="destino">Selecciona el destino </label>
+
+        <select id="destino" name="destino">
+            <option value="">Seleccionar Destino</option>
+            <option value="La Costa del Sol">La Costa del Sol</option>
+            <option value="Panchimalco">Panchimalco</option>
+            <option value="Puerto el Triunfo">Puerto el Triunfo</option>
+        </select>
+
+        <button type="submit">Calcular Descuento</button>
+    </form>
+
+    <div id="resultado"></div>
+
+</body>
+<script src="./js/script.js"></script>
+
+</html>
